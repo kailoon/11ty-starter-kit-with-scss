@@ -15,14 +15,16 @@ Based on the official starter kit and come with 7 in 1 folder structure SCSS dev
   "build": "npm-run-all build:sass build:eleventy"
 ```
 
-```json
-// to start develop
+## Develop
+
+```
 npm run start
 ```
 
-```json
-// to buidl with purgecss
+## Build with purgecss
+
+```
 npm run build
 ```
 
-or you can use any of the provided scripts to run the task you need.
+or, you can use any of the provided scripts to run the task you need.

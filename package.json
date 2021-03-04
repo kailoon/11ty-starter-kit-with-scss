@@ -21,6 +21,10 @@
 		"postcss",
 		"autoprefixer"
 	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kailoon/11ty-starter-kit-with-scss.git"
+	},
 	"author": "kailoon",
 	"license": "ISC",
 	"devDependencies": {
