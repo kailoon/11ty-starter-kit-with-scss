@@ -1,0 +1,5 @@
+{
+	"layout": "post",
+	"templateEngineOverride": "njk,md",
+	"tags": ["posts"]
+}

@@ -1,0 +1,6 @@
+// Basic typography style for copy text
+body {
+	color: $text-color;
+	font: normal 100% / 1.5 $text-font-stack;
+	line-height: 1.5;
+}

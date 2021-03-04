@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>{{ site.name | safe }} — {{ site.description | safe }}</title>
+  <meta name="title" content="{{ site.name | safe }} — {{ site.description | safe }}">
+  <meta name="description" content="{{ site.description | safe }}">
+
+  <!-- Open Graph / Facebook https://metatags.io/ -->
+  <!-- Twitter https://metatags.io/-->
+  <!-- favicon -->
+
+  <link rel="stylesheet" href="{{'/assets/css/main.css' | url }}" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link
+        href="{{ '/assets/css/main.css' | url }}"
+        rel="stylesheet"
+        type="text/css"
+    />
+  </noscript>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytic}}"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ site.analytic}}');
+  </script>
+</head>
+<body>
+  {% include "../_components/header.njk" %}
+    {% block content %}
+      {{ content | safe }}
+    {% endblock %}
+  {% include "../_components/footer.njk" %}
+</body>
+</html>
